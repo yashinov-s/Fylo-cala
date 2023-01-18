@@ -1,0 +1,352 @@
+/* =============== CONTENTS =============== */
+/* FONTS */
+/* BOX-SIZING */
+/* GLOBAL STYLES */
+/* HELPER / GLOBAL COMPONENTS */
+/* MEDIA QUERIES */
+
+
+
+/*------------------------------------*\
+  #FONT-FACE
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+/*------------------------------------*\
+  #GLOBAL-STYLES
+\*------------------------------------*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background: #181F2B;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/raleway-v28-latin-regular.woff2') format('woff2'),
+       url('../fonts/raleway-v28-latin-regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/raleway-v28-latin-700.woff2') format('woff2'),
+       url('../fonts/raleway-v28-latin-700.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'),
+       url('../fonts/open-sans-v34-latin-regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'),
+       url('../fonts/open-sans-v34-latin-700.woff') format('woff')
+}
+
+/*------------------------------------*\
+  #HELPER / GLOBAL COMPONENTS
+\*------------------------------------*/
+
+/* VISUALLY HIDING CODE */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1280px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background: #181f2bea;
+  padding-bottom: 20px;
+}
+
+.header__container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;   
+}
+
+.header__list {
+  list-style-type: none;
+  display: flex;
+  margin-left: -30px;                                                                                               
+}
+
+.header__li {
+  margin-left: 68px;
+}
+
+.header__link {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;  
+  text-decoration: none;
+}
+
+.intro {
+  background: #181F2B;
+}
+
+.intro__container {
+  padding-left: 220px;
+}
+
+.intro__h {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFFFFF;  
+  width: 700px;
+  margin-left: 15px;
+}
+
+.intro__p {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;  
+  width: 532px;
+  margin-left: 100px;
+}
+
+.intro__link {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;  
+  background: linear-gradient(152.13deg, #63E1D9 -150.21%, #34A0CD 170.03%);
+  border-radius: 29px;
+  padding: 18px 90px 11px 90px;  
+  text-decoration: none;
+  margin-left: 230px;
+  transition: all 0.5s ease;
+}
+
+.intro__link:hover {
+  background: #00ffee;
+}
+
+.intro__link:active {
+  background: #222;
+}
+
+.section__div {
+  margin-top: 150px;
+}
+
+.section__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section__li {
+  text-align: center;
+  margin-left: 20px;
+}
+
+.section__h {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;  
+}
+
+.section__p {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF; 
+  width: 300px; 
+  margin-top: -15px;
+}
+
+.section__li2 {
+  text-align: center;
+  margin-left: 290px;
+  margin-top: -8px;
+}
+
+.section__h1 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;  
+}
+
+.section__p1 {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF; 
+  width: 390px; 
+  margin-top: -15px;
+}
+
+.section__li3 {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.section__p2 {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 363px;  
+}
+
+@media only screen and (max-width: 620px) {
+  .header__container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;   
+  }
+
+  .intro {
+    background: #181F2B;
+  }
+
+  .intro__link {
+    margin-left: -120px;
+    padding: 14px 59px 13px 58px;
+  }
+}
+
+@media only screen and (max-width: 604px) {
+  .header__list {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+  }
+
+  .header__li {
+    margin-left: 20px;
+  }
+
+  .intro {
+    background: #181F2B;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header__link {
+    font-size: 14px;
+  }
+
+  .header__logo {
+    width: 110px;
+    height: 30px;
+  }  
+
+  .header__li {
+    margin-left: 18px;
+  }
+
+  .intro {
+    background: #181F2B;
+  }
+
+  .intro__img {
+    width: 180px;
+    height: 120px;
+    margin-left: -84px;
+  }
+
+  .intro__h {
+    font-size: 15px;
+    width: 310px;
+    margin-left: -170px;
+    line-height: 25px;
+  }
+
+  .intro__p {
+    font-size: 12px;
+    width: 306px;
+    margin-left: -150px;
+    line-height: 15px;
+  }
+
+  .intro__link {
+    padding: 7px 20px 7px 20px;
+    font-size: 10px;
+  }
+}
